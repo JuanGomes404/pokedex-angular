@@ -1,0 +1,50 @@
+@import '../../../assets/styles/variables.scss';
+
+.container-poke-table{
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.mat-form-field{
+ display: flex;
+ justify-content: center;
+}
+table, .mat-paginator{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+
+}
+
+::ng-deep.mat-form-field-label{
+  color:white !important;
+}
+::ng-deep.mat-form-field-underline{
+  background-color:$white !important;
+}
+::ng-deep.mat-form-field-ripple{
+  background-color: $white !important;
+}
+input{
+  color: $white !important;
+}
+
+.mat-header-cell{
+  text-align: center;
+  color: $black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.mat-cell:first-letter{
+  text-transform: uppercase;
+}
+.mat-row:hover{
+  cursor:pointer;
+  transition: 0.2s;
+  font-weight: bold;
+  background-color: $red;
+  box-shadow: inset 0 0 0 0.3px $black;
+}
+.title-habilidades{
+  font-weight: bold;
+}

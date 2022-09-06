@@ -1,0 +1,28 @@
+<mat-card class="example-card card">
+
+  <mat-card-header>
+    <img mat-card-avatar class="header-image" src="{{pokemonImg}}" alt="imagem pokemon">
+    <mat-card-title>{{pokemon.name}}</mat-card-title>
+    <mat-card-subtitle>N° Pokédex: {{pokemon.id}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image src="{{pokemonImg}}" alt="Imagem Pokemon">
+  <mat-card-content>
+    <p class="title-info">Informações gerais</p><br>
+    <mat-chip-list>
+      <mat-chip>Tipo: {{tipoPokemon}}</mat-chip>
+      <mat-chip>Altura: {{pokemon.height/10}}m</mat-chip>
+      <mat-chip> Peso: {{pokemon.weight/10}}kg</mat-chip>
+    </mat-chip-list>
+    <hr>
+    <p class="title-info">Habilidades:</p>
+    <mat-chip-list>
+      <mat-chip class="chip-habilidade" *ngFor="let poke of habilidadesPokemon">{{poke.ability.name}}</mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button color="primary" (click)="home()">Home</button>
+  </mat-card-actions>
+
+</mat-card>
