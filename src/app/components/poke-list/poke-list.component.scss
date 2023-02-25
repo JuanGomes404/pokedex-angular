@@ -1,0 +1,33 @@
+@import '../../../assets/styles/variables.scss';
+
+ul{
+  list-style-type: none;
+}
+.lista__pokemon{
+  width: 80vw;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.pokemon__card{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 15px;
+  border-radius: 10px;
+
+}
+
+.pokemon__card:hover{
+  cursor: pointer;
+}
+
+.pokemon__image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

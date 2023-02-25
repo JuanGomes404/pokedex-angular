@@ -27,7 +27,7 @@ export class PokeDetailsComponent implements OnInit {
     this.router.navigateByUrl("home");
   }
   getPokemon(id: any){
-    this.pokeService.getPokemons(id).subscribe(
+    this.pokeService.getPokemonById(id).subscribe(
       res => {
         console.log(res);
         this.pokemon = res;

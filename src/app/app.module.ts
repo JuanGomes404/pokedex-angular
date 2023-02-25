@@ -4,20 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PokeDetailsComponent } from './components/poke-details/poke-details.component';
-import { PokeTableComponent } from './components/poke-table/poke-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { PokeListComponent } from './components/poke-list/poke-list.component';
+import { PokeSearchComponent } from './components/poke-search/poke-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     HeaderComponent,
     PokeDetailsComponent,
-    PokeTableComponent
+    PokeListComponent,
+    PokeSearchComponent,
+
   ],
   imports: [
     BrowserModule,

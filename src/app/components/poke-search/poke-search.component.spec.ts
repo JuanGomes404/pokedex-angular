@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PokeTableComponent } from './poke-table.component';
+import { PokeSearchComponent } from './poke-search.component';
 
-describe('PokeTableComponent', () => {
-  let component: PokeTableComponent;
-  let fixture: ComponentFixture<PokeTableComponent>;
+describe('PokeSearchComponent', () => {
+  let component: PokeSearchComponent;
+  let fixture: ComponentFixture<PokeSearchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PokeTableComponent ]
+      declarations: [ PokeSearchComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PokeTableComponent);
+    fixture = TestBed.createComponent(PokeSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
